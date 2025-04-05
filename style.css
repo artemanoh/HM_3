@@ -1,0 +1,153 @@
+:root {
+    --feauturesmain: #f3e221;
+    --whathbt: white;
+    --whathbtbg: #f3e221;
+    --header-color: #ececec;
+}
+
+
+.photo {
+    display: block;
+    min-height: 300px;
+    background-color: #e0e0e0;
+    width: 700px;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+    object-position: center;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
+}
+
+.photo-button {
+    display: block;
+    min-height: 300px;
+    background-color: #e0e0e0;
+    width: 700px;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+    object-position: center;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.lazy-photo {
+    opacity: 1;
+    transform: scale(1);
+}
+
+header {
+    padding: 24px 0;
+    border-bottom: 1px solid var(--header-color, #ececec);
+}
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+}
+
+.container-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.header-list {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.header-list-item {
+    display: flex;
+    gap: 53px;
+    margin-left: 325px;
+    line-height: 1.15;
+}
+
+
+
+
+.header-link {
+    color: var(--feauturesmain);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.28px;
+    position: relative;
+    transition-duration: 250ms;
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.header-link-line {
+    color: var(--whathbtbg);
+}
+
+
+.header-link-line:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--whathbtbg);
+    position: absolute;
+    bottom: -32px;
+    right: 0;
+}
+
+
+.header-link:hover {
+    color: var(--whathbtbg);
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+    color: var(--whathbtbg);
+}
+
+
+.button-photo {
+    color: var(--feauturesmain);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.63;
+    letter-spacing: 0.48px;
+    padding: 6px 22px;
+    list-style: none;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 22px;
+    transition-duration: 250ms;
+    transition-property: background-color, box-shadow, color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-photo:hover,
+.button-photo:focus {
+    color: var(--Whatdo);
+    background-color: var(--whathbtbg);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+
+}
